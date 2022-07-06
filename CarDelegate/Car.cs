@@ -30,5 +30,29 @@ namespace CarDelegate
             MaxSpeed = maxSp;
             PetName = name;
         }
+        // Реализовать метод Accelerate() для обращения к списку
+        // вызовов делегата в подходящих обстоятельствах
+        public void Accelerate(int delta)
+        {
+            // Если автомобиль сломан, то отправить сообщение об этом
+            if (carIsDead)
+            {
+                if (listOfHandlers != null)
+                    listOfHandlers("Sorry, this car is dead...");
+            }
+            else
+            {
+                CurrentSpeed += delta;
+                // Автомобиль почти сломан?
+                if (10==(MaxSpeed-CurrentSpeed) && listOfHandlers!=null)
+                {
+                    listOfHandlers("Careful buddy! Gonna blow!");
+                }
+                if (CurrentSpeed >= MaxSpeed)
+                    carIsDead = true;
+                else
+                    Console.WriteLine("CurrentSpeed = {0}",CurrentSpeed);
+            }
+        }
     }
 }
