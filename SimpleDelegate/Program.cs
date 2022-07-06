@@ -18,5 +18,14 @@ namespace SimpleDelegate
             BinatyOp b = new BinatyOp(SimpleMath.Add);
             Console.WriteLine("10 + 10 is {0}", b(10,10));
         }
+
+        static void DisplayDelegateInfo(Delegate delObj)
+        {
+            foreach(Delegate d in delObj.GetInvocationList())
+            {
+                Console.WriteLine("Method NAme: {0}", d.Method);
+                Console.WriteLine(("Type Name: {0}",d.Target);
+            }
+        }
     }
 }
