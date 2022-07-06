@@ -13,7 +13,9 @@ namespace SimpleDelegate
     {
         static void Main(string[] args)
         {
-            
+            Console.WriteLine("***** Simple Delegate Example *****\n");
+            BinatyOp b = new BinatyOp(SimpleMath.Add);
+            Console.WriteLine("10 + 10 is {0}", b(10,10));
         }
     }
 }
