@@ -16,6 +16,7 @@ namespace SimpleDelegate
         {
             Console.WriteLine("***** Simple Delegate Example *****\n");
             BinatyOp b = new BinatyOp(SimpleMath.Add);
+            DisplayDelegateInfo(b);
             Console.WriteLine("10 + 10 is {0}", b(10,10));
         }
 
@@ -23,8 +24,8 @@ namespace SimpleDelegate
         {
             foreach(Delegate d in delObj.GetInvocationList())
             {
-                Console.WriteLine("Method NAme: {0}", d.Method);
-                Console.WriteLine(("Type Name: {0}",d.Target);
+                Console.WriteLine("Method Name: {0}", d.Method);
+                Console.WriteLine("Type Name: {0}",d.Target);
             }
         }
     }
