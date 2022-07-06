@@ -20,7 +20,7 @@ namespace CarDelegate
         public static void OnCarEngineEvent(string msg)
         {
             Console.WriteLine("\n***** Message From Car Object *****");
-            Console.WriteLine("=> {0}", msg);
+            Console.WriteLine("=> {0}", msg.ToUpper());
             Console.WriteLine("************************************\n");
         }
 
