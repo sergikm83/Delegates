@@ -17,6 +17,11 @@ namespace CarDelegate
         {
             listOfHandlers += methodToCall;
         }
+        // удалить обработчик
+        public void UnRegisterWithCarEngine(CarEngineHandler methodToCall)
+        {
+            listOfHandlers -= methodToCall;
+        }
         public int CurrentSpeed { get; set; }
         public int MaxSpeed { get; set; } = 100;
         public string PetName { get; set; }
