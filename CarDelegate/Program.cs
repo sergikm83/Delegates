@@ -11,6 +11,8 @@ namespace CarDelegate
             // Сообщить объекту Car, какой метод вызывать,
             // когда он пожелает отправить сообщение
             c1.RegisterWithCarEngine(new Car.CarEngineHandler(OnCarEngineEvent));
+            // зарегистрировал второй обработчик событий
+            c1.RegisterWithCarEngine(new Car.CarEngineHandler(OnCarEngineEvent2));
             Console.WriteLine("***** Speeding up *****");
             for (int i = 0; i < 6; i++)
                 c1.Accelerate(20);
@@ -20,6 +22,11 @@ namespace CarDelegate
             Console.WriteLine("\n***** Message From Car Object *****");
             Console.WriteLine("=> {0}", msg);
             Console.WriteLine("************************************\n");
+        }
+
+        public static void OnCarEngineEvent2(string msg)
+        {
+            Console.WriteLine("=> {0}", msg);
         }
     }
 }
