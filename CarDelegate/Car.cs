@@ -15,7 +15,7 @@ namespace CarDelegate
         // Добавить регистрационную функцию для вызывающего кода
         public void RegisterWithCarEngine(CarEngineHandler methodToCall)
         {
-            listOfHandlers = methodToCall;
+            listOfHandlers += methodToCall;
         }
         public int CurrentSpeed { get; set; }
         public int MaxSpeed { get; set; } = 100;
