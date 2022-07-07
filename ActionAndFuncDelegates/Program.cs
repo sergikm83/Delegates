@@ -10,6 +10,14 @@ namespace ActionAndFuncDelegates
             // Использовать делегат Action<> для указания на DisplayMessage.
             Action<string, ConsoleColor, int> actionTarget = DisplayMessage;
             actionTarget("Action Message!", ConsoleColor.Yellow, 5);
+            Console.WriteLine();
+            Func<int, int, int> funcTarget = Add;
+            int result = funcTarget.Invoke(40, 40);
+            Console.WriteLine($"40 + 40 = {result}");
+            Console.WriteLine();
+            Func<int, int, string> funcTarget2 = SumToString;
+            string sum = funcTarget2.Invoke(90, 300);
+            Console.WriteLine($"90 + 300 = {sum}");
         }
 
         // Это цель для делегата Action<>.
