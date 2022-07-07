@@ -27,5 +27,6 @@ namespace ActionAndFuncDelegates
         }
         // Цель для делегата Func<>.
         static int Add(int x, int y) => x + y;
+        static string SumToString(int x, int y) => $"{x + y}";
     }
 }
