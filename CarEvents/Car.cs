@@ -47,17 +47,18 @@ namespace CarEvents
             // Если автомобиль сломан, то отправить сообщение об этом
             if (carIsDead)
             {
-                if (listOfHandlers != null)
-                    listOfHandlers("Sorry, this car is dead...");
+                if (Exploded != null)
+                    Exploded("Sorry, this car is dead...");
             }
             else
             {
                 CurrentSpeed += delta;
                 // Автомобиль почти сломан?
-                if (10==(MaxSpeed-CurrentSpeed) && listOfHandlers!=null)
+                if (10==(MaxSpeed-CurrentSpeed) && AboutToBlow!=null)
                 {
-                    listOfHandlers("Careful buddy! Gonna blow!");
+                    AboutToBlow("Careful buddy! Gonna blow!");
                 }
+                // Все ещё в порядке!
                 if (CurrentSpeed >= MaxSpeed)
                     carIsDead = true;
                 else
