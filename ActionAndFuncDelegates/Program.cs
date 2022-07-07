@@ -12,6 +12,7 @@ namespace ActionAndFuncDelegates
             actionTarget("Action Message!", ConsoleColor.Yellow, 5);
         }
 
+        // Это цель для делегата Action<>.
         static void DisplayMessage(string msg, ConsoleColor txtColor, int printCount)
         {
             ConsoleColor previous = Console.ForegroundColor;
