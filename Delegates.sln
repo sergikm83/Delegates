@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleDelegate", "SimpleDel
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarDelegate", "CarDelegate\CarDelegate.csproj", "{8616D767-6E0F-4BD3-9BFC-4B22F8D1A591}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActionAndFuncDelegates", "ActionAndFuncDelegates\ActionAndFuncDelegates.csproj", "{47AC7DF6-0581-4205-84AB-0DCEE36F332C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{8616D767-6E0F-4BD3-9BFC-4B22F8D1A591}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8616D767-6E0F-4BD3-9BFC-4B22F8D1A591}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8616D767-6E0F-4BD3-9BFC-4B22F8D1A591}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47AC7DF6-0581-4205-84AB-0DCEE36F332C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47AC7DF6-0581-4205-84AB-0DCEE36F332C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47AC7DF6-0581-4205-84AB-0DCEE36F332C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47AC7DF6-0581-4205-84AB-0DCEE36F332C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
