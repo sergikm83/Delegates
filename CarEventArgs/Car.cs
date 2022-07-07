@@ -9,7 +9,7 @@ namespace CarEventArgs
     public class Car
     {
         // Этот делегат работает в сочетании с событиями Car.
-        public delegate void CarEngineHandler(string msgForCaller);
+        public delegate void CarEngineHandler(object sender, CarEventArgs e);
 
         // Car может отправлять следующие события:
         public event CarEngineHandler Exploded;
@@ -34,7 +34,7 @@ namespace CarEventArgs
             // Если автомобиль сломан, то отправить сообщение об этом
             if (carIsDead)
             {
-                Exploded?.Invoke("Sorry, this car is dead...");
+                Exploded?.Invoke(this, new CarEventArgs("Sorry, this car is dead..."));
             }
             else
             {
@@ -42,7 +42,7 @@ namespace CarEventArgs
                 // Автомобиль почти сломан?
                 if (10==MaxSpeed-CurrentSpeed)
                 {
-                    AboutToBlow?.Invoke("Careful buddy! Gonna blow!");
+                    AboutToBlow?.Invoke(this, new CarEventArgs("Careful buddy! Gonna blow!"));
                 }
                 // Все ещё в порядке!
                 if (CurrentSpeed >= MaxSpeed)
