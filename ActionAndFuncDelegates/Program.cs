@@ -6,7 +6,10 @@ namespace ActionAndFuncDelegates
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("***** Fun with Action an Func *****");
+            // Использовать делегат Action<> для указания на DisplayMessage.
+            Action<string, ConsoleColor, int> actionTarget = DisplayMessage;
+            actionTarget("Action Message!", ConsoleColor.Yellow, 5);
         }
 
         static void DisplayMessage(string msg, ConsoleColor txtColor, int printCount)
