@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarDelegate", "CarDelegate\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActionAndFuncDelegates", "ActionAndFuncDelegates\ActionAndFuncDelegates.csproj", "{47AC7DF6-0581-4205-84AB-0DCEE36F332C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarEvents", "CarEvents\CarEvents.csproj", "{6001E469-9268-436E-A16A-D5B47AA04CCD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{47AC7DF6-0581-4205-84AB-0DCEE36F332C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47AC7DF6-0581-4205-84AB-0DCEE36F332C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47AC7DF6-0581-4205-84AB-0DCEE36F332C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6001E469-9268-436E-A16A-D5B47AA04CCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6001E469-9268-436E-A16A-D5B47AA04CCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6001E469-9268-436E-A16A-D5B47AA04CCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6001E469-9268-436E-A16A-D5B47AA04CCD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
