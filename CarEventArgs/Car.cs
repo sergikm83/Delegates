@@ -8,12 +8,9 @@ namespace CarEventArgs
 {
     public class Car
     {
-        // Этот делегат работает в сочетании с событиями Car.
-        public delegate void CarEngineHandler(object sender, CarEventArgs e);
-
         // Car может отправлять следующие события:
-        public event CarEngineHandler Exploded;
-        public event CarEngineHandler AboutToBlow;
+        public event EventHandler<CarEventArgs> Exploded;
+        public event EventHandler<CarEventArgs> AboutToBlow;
         public int CurrentSpeed { get; set; }
         public int MaxSpeed { get; set; } = 100;
         public string PetName { get; set; }
