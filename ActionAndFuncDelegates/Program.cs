@@ -25,5 +25,7 @@ namespace ActionAndFuncDelegates
 
             Console.ForegroundColor = previous;
         }
+        // Цель для делегата Func<>.
+        static int Add(int x, int y) => x + y;
     }
 }
