@@ -10,8 +10,11 @@ namespace CarEvents
     {
         // Этот делегат работает в сочетании с событиями Car.
         public delegate void CarEngineHandler(string msgForCaller);
-        
-        
+
+        // Car может отправлять следующие события:
+        public event CarEngineHandler Exploded;
+        public event CarEngineHandler AboutToBlow;
+
         // Определить переменную-член этого типа делегата
         private CarEngineHandler listOfHandlers;
         // Добавить регистрационную функцию для вызывающего кода
